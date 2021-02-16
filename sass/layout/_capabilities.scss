@@ -1,22 +1,31 @@
 .capabilities .container {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 1200px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 .capabilities-list {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .capabilities-item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 .capabilities-item:not(:last-child) {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 }
@@ -29,7 +38,7 @@
 
   display: inline-block;
   margin-bottom: 10px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: block;
     text-align: center;
   }
@@ -44,7 +53,7 @@
   background-color: $iconDivBgc;
   border-radius: 4px;
   margin-bottom: 30px;
-  @media screen and (min-width: 481px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: 120px;
   }

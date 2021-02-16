@@ -2,6 +2,9 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
 }
 
 .form-subscribe {
@@ -9,6 +12,11 @@
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.25;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .subscribe-input {
@@ -25,7 +33,7 @@
   border: 1px solid $subscribeInputBorder;
   box-sizing: border-box;
   border-radius: 4px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     margin-bottom: 20px;
   }
 }

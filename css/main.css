@@ -83,11 +83,25 @@ img {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-logo.webstudio {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .footer-studio {
   color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
+  .subscribe-div {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .subscribe-div {
     text-align: center;
   }
@@ -117,6 +131,21 @@ img {
   line-height: 1.25;
 }
 
+@media screen and (min-width: 768px) {
+  .form-subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .subscribe-input {
   display: inline-block;
   width: 358px;
@@ -132,7 +161,7 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .subscribe-input {
     margin-bottom: 20px;
   }
@@ -173,6 +202,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 }
 
 .back-page.is-hidden {
@@ -288,7 +318,6 @@ img {
   color: #2196f3;
   text-decoration: none;
   display: inline-block;
-  margin-right: 93px;
 }
 
 @media screen and (max-width: 767px) {
@@ -297,6 +326,12 @@ img {
     padding-bottom: 16px;
     margin-left: 15px;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .webstudio {
+    margin-right: 88px;
   }
 }
 
@@ -365,14 +400,14 @@ img {
   margin-top: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .capabilities .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .capabilities-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,13 +419,32 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .capabilities-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .capabilities-item {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .capabilities-item {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .capabilities-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -406,7 +460,7 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .capabilities-title {
     display: block;
     text-align: center;
@@ -429,21 +483,21 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (max-width: 767px) {
   .icon-division {
     width: 100%;
     height: 120px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1600px) {
   .clients .container {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1600px) {
   .list-clients {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -462,7 +516,7 @@ img {
   height: 90px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1600px) {
   .item-clients {
     margin: 15px;
   }
@@ -507,7 +561,26 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .studio-adress {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .studio-adress {
     text-align: center;
     padding-bottom: 60px;
@@ -521,7 +594,24 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .list-join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .list-join {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -601,14 +691,61 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .header.index-no-line {
   border-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header-list-mobile-none {
     display: none;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .header-list-mobile-none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list-info.header-list-mobile-none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+  }
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-info {
@@ -733,9 +870,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .form-blank {
+    width: 370px;
+  }
 }
 
 .form-title {
@@ -744,6 +886,7 @@ img {
   line-height: 1.15;
   color: var(--link-normal-color);
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .label-blank {
@@ -803,12 +946,16 @@ img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 43px 8px 37px 8px;
-  min-width: 528px;
-  min-height: 581px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .modal-button {
@@ -853,6 +1000,13 @@ img {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .policy-link {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+}
+
 .policy-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -877,28 +1031,6 @@ img {
   overflow: hidden;
 }
 
-.policy-label::after {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  content: "";
-  display: inline-block;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  background-image: url(../img/checkbox/icon-check.svg);
-  background-color: var(--akcent-text-button-color);
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid var(--akcent-text-button-color);
-  border-radius: 2px;
-  opacity: 0;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .policy-label {
   position: relative;
   display: -webkit-box;
@@ -918,7 +1050,7 @@ img {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-image: url(../img/form.svg);
+  background-image: url(/img/form.svg);
   background-size: contain;
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -936,7 +1068,7 @@ img {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  background-image: url(../img/checkbox/icon-check.svg);
+  background-image: url(/img/checkbox/icon-check.svg);
   background-color: #2196f3;
   background-size: contain;
   background-origin: border-box;
@@ -945,6 +1077,13 @@ img {
   opacity: 0;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .policy-label {
+    font-size: 12px;
+    line-height: 1.166;
+  }
 }
 
 .checkbox-policy:checked + .policy-label::after {
@@ -1008,7 +1147,7 @@ img {
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1200px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1023,9 +1162,20 @@ img {
   color: #212121;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1600px) {
   .team-title {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1037,20 +1187,24 @@ img {
   background-color: #ffffff;
 }
 
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-list-item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .team-list-item {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 

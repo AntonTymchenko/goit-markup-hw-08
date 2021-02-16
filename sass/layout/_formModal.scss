@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
 
-  width: 448px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (max-width: 768px) {
+    width: 370px;
+  }
 }
 .form-title {
   font-weight: 700;
@@ -13,6 +15,7 @@
   color: var(--link-normal-color);
 
   margin-bottom: 12px;
+  text-align: center;
 }
 // input modal
 .label-blank {
@@ -74,13 +77,14 @@
   transform: translate(-50%, -50%);
 
   padding: 43px 8px 37px 8px;
-  min-width: 528px;
-  min-height: 581px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
 }
 //Closed BTN modal
 .modal-button {
@@ -117,6 +121,10 @@
   &:hover {
     text-decoration: none;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
 }
 // checkbox modal
 .policy-div {
@@ -138,30 +146,6 @@
   overflow: hidden;
 }
 
-.policy-label::after {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  content: "";
-  display: inline-block;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-
-  background-image: url(../img/checkbox/icon-check.svg);
-  background-color: var(--akcent-text-button-color);
-  background-size: contain;
-  background-origin: border-box;
-  border: 2px solid var(--akcent-text-button-color);
-  border-radius: 2px;
-  opacity: 0;
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .policy-label {
   position: relative;
   display: flex;
@@ -177,7 +161,7 @@
     width: 16px;
     height: 15px;
 
-    background-image: url(../img/form.svg);
+    background-image: url(/img/form.svg);
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;
@@ -197,7 +181,7 @@
     width: 16px;
     height: 15px;
 
-    background-image: url(../img/checkbox/icon-check.svg);
+    background-image: url(/img/checkbox/icon-check.svg);
     background-color: $akcentColor;
     background-size: contain;
     background-origin: border-box;
@@ -207,6 +191,10 @@
 
     transition: opacity 250ms $cubicBezier, background-image 250ms $cubicBezier,
       background-color 250ms $cubicBezier;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 1.166;
   }
 }
 .checkbox-policy:checked + .policy-label::after {
