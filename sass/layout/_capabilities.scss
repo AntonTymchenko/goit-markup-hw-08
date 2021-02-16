@@ -3,6 +3,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .capabilities-list {
   @media screen and (max-width: 767px) {
@@ -13,6 +17,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 .capabilities-item {

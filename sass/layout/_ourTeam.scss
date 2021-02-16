@@ -1,8 +1,12 @@
 .team {
   background-color: $ourTeamBgc;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -13,8 +17,9 @@
   font-size: 36px;
   line-height: 1.16;
   color: $linkNormalColor;
-  @media screen and (max-width: 1600px) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 // our team list
@@ -23,6 +28,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 .team-list-item {

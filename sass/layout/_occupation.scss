@@ -1,5 +1,5 @@
 .occupation {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -22,10 +22,17 @@
   position: absolute;
   bottom: 0;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
 // occupation list
-
+.occupation-list {
+  display: flex;
+}
 .occupation-item {
   width: 370px;
   height: 294px;

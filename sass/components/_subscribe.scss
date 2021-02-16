@@ -1,10 +1,10 @@
 .subscribe-div {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
-    text-align: center;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
 }
 
 .form-subscribe {
@@ -13,10 +13,13 @@
     font-size: 16px;
     line-height: 1.25;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 .subscribe-input {
@@ -33,7 +36,7 @@
   border: 1px solid $subscribeInputBorder;
   box-sizing: border-box;
   border-radius: 4px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
 }
