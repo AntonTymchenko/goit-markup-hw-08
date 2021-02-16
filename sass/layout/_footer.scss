@@ -1,0 +1,81 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+//logo division
+.studio-adress {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+//join div
+.join {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+.list-join {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+.join-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+//Join SVG
+
+.item-join {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.link-join {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  background: $joinLinkColor;
+  justify-content: center;
+  align-items: center;
+  fill: #ffffff;
+  transition: background-color 250ms $cubicBezier;
+  &:hover,
+  &:focus {
+    background-color: $akcentColor;
+  }
+}
+// studio adress list
+
+.footer-list {
+  font-style: normal;
+}
+.company-address {
+  color: #ffffff;
+  font-style: normal;
+}
+.contact-info {
+  color: $colorContactInfo;
+  text-decoration: none;
+
+  transition: color 250ms $cubicBezier;
+  &:hover,
+  &:focus {
+    color: $akcentColor;
+  }
+}
+
+.address-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}

@@ -1,0 +1,33 @@
+.portfoilio-card-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-card-item:hover .card-overlay,
+.portfolio-link:focus .card-overlay {
+  transform: translateY(0);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform 250ms $cubicBezier;
+  .portfolio-card-item:hover &,
+  .portfolio-link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.overlay-text {
+  font-size: 18px;
+  line-height: 1.55;
+
+  color: #ffffff;
+}

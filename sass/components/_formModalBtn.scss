@@ -1,0 +1,21 @@
+.button-blank {
+  display: block;
+  min-width: 200px;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 4px;
+  border: 0;
+  background: $akcentColor;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #ffffff;
+  cursor: pointer;
+
+  transition: box-shadow 250ms $cubicBezier;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

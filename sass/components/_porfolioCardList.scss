@@ -1,0 +1,15 @@
+.card-division {
+  width: 1170px;
+}
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * #{$cardSetUp});
+  margin-left: calc(-1 * #{$cardSetUp});
+}
+.portfolio-card-item {
+  flex-basis: calc(100% / 3 - #{$cardSetUp});
+  border: 1px solid #eeeeee;
+  margin-left: $cardSetUp;
+  margin-top: $cardSetUp;
+}

@@ -1,0 +1,46 @@
+.occupation {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.occupation .container {
+  padding-bottom: 102px;
+}
+.image-discription {
+  position: relative;
+}
+.occupation-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.text-division {
+  position: absolute;
+  bottom: 0;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+// occupation list
+
+.occupation-item {
+  width: 370px;
+  height: 294px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.occupation-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: $linkNormalColor;
+
+  display: block;
+  margin-bottom: 50px;
+}

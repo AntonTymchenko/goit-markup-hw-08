@@ -1,0 +1,21 @@
+.webstudio {
+  font-family: $secondFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $akcentColor;
+  text-decoration: none;
+
+  display: inline-block;
+  margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+.studio {
+  color: $titleTextColor;
+}
