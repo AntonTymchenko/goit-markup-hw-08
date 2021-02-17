@@ -1,0 +1,116 @@
+.mobile-menu {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: #ffffff;
+    padding: 48px 0 48px 40px;
+    display: none;
+    z-index: 5;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &.is-open {
+    display: block;
+  }
+}
+.mobile-menu-list {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &:first-child {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 302px;
+    }
+  }
+}
+
+.current::after {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.mobile-menu-item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+.navlink {
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
+}
+.mobile-link-contact {
+  @media screen and (max-width: 767px) {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+  }
+  transition: font-size 250ms $cubicBezier, line-height 250ms $cubicBezier,
+    color 250ms $cubicBezier;
+  &:hover,
+  &:focus {
+    color: $akcentColor;
+    font-size: 34px;
+    line-height: 1.176;
+  }
+}
+.mobile-item-contact:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+}
+// MOBILE SOCIAL LIST
+.mobile-social-list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: left;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+.mobile-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mobile-social-link {
+  @media screen and (max-width: 767px) {
+    margin-top: 64px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+
+    color: $akcentColor;
+  }
+  &::after {
+    @media screen and (max-width: 767px) {
+      content: "";
+      display: inline-block;
+      width: 1px;
+      height: 22px;
+      background-color: rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+    }
+  }
+}
+.mobile-social-link.line-none::after {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}

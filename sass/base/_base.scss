@@ -7,6 +7,9 @@ body {
   letter-spacing: 0.03em;
   color: $textColor;
 }
+body.modal-open {
+  overflow: hidden;
+}
 .container {
   outline: 1px solid teal;
   margin-left: auto;

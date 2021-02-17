@@ -2,11 +2,12 @@
   @media screen and (max-width: 1199px) {
     display: none;
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 47px;
+    padding-bottom: 102px;
+  }
 }
 
-.occupation .container {
-  padding-bottom: 102px;
-}
 .image-discription {
   position: relative;
 }

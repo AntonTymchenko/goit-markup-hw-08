@@ -1,11 +1,33 @@
-.gallery .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.gallery {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .button-list {
-  display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+.button-items:first-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 .button-items:not(:last-child) {
   margin-right: 8px;

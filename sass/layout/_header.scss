@@ -1,11 +1,40 @@
 .header {
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
   & .container {
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
     }
   }
+}
+// btn for mobile menu
+.mobile-menu-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  z-index: 10;
+  &:hover .mobile-button-icon,
+  &:focus .mobile-button-icon {
+    fill: $akcentColor;
+  }
+}
+.mobile-button-icon {
+  transition: fill 250ms $cubicBezier;
+}
+.mobile-menu-button .icon-menu-line {
+  display: none;
+}
+.mobile-menu-button.is-open .icon-menu-line {
+  display: block;
+}
+.mobile-menu-button.is-open .icon-close-menu {
+  display: none;
 }
 
 .header.index-no-line {
@@ -15,6 +44,11 @@
 //navigation
 
 .navigation {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -76,17 +110,20 @@
 // navigation tell and email
 
 .navlink {
+  display: inline-block;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: $linkNormalColor;
 
-  display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms $cubicBezier;
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   &:hover,
   &:focus {
     color: $akcentColor;

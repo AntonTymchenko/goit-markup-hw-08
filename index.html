@@ -20,7 +20,61 @@
     <div class="container">
       <nav class="navigation">
         <a href="./index.html" class="webstudio">Web<span class="studio">Studio</span></a>
+        <!-- Mobile menu  -->
+        <button type="button" class="mobile-menu-button is-open" aria-expanded="false"
+        data-menu-button aria-controls="menu-container">
+          <svg 
+          width="40" 
+          height="40" 
+          aria-label="Переключатель мобильного меню" class="mobile-button-icon">
+            <use class="icon-close-menu" href="./img/sprite.svg#icon-close-menu"></use>
+            <use class="icon-menu-line" href="./img/sprite.svg#icon-menu-line"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="menu-container" data-menu>
 
+          <ul class="nav-list list mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a href="./index.html" lang="ru" class="navlink current">Студия</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="./portfolio.html" lang="ru" class="navlink">Портфолио</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a href="#" lang="ru" class="navlink">Контакты</a>
+            </li>
+          </ul>
+          <ul class="nav-list-info list mobile-menu-list">
+            
+            <li class="mobile-item-contact">
+              <a href="tel:+380961111111" class="mobile-link-contact">
+                
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="nav-item-info">
+              <a href="mailto:info@devstudio.com" class="mobile-link-contact">
+            
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">Instagram</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">Twitter</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link">Facebook</a>
+            </li>
+            <li class="mobile-social-item">
+              <a href="#" class="mobile-social-link line-none">Linkedin</a>
+            </li>
+          </ul>
+
+        </div>
+            <!-- END MOBILE MENU -->
         <ul class="nav-list list header-list-mobile-none">
           <li class="nav-item">
             <a href="./index.html" lang="ru" class="navlink current">Студия</a>
@@ -484,9 +538,8 @@
     </div>
   </div>
 
-  <script src="./js/modal.js">
-
-  </script>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
