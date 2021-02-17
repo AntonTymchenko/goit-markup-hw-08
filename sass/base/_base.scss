@@ -1,3 +1,8 @@
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 body {
   font-family: $mainFont;
   font-style: normal;
@@ -6,12 +11,16 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $textColor;
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body.modal-open {
   overflow: hidden;
 }
 .container {
-  outline: 1px solid teal;
+  // outline: 1px solid teal;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
