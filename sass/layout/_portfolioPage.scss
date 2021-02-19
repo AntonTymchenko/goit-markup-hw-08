@@ -24,7 +24,7 @@
     justify-content: center;
   }
 }
-.button-items:first-child {
+.button-items:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }

@@ -1,21 +1,25 @@
 .mobile-menu {
   @media screen and (max-width: 767px) {
     position: absolute;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+
     top: 0;
     left: 0;
 
     background-color: #ffffff;
     padding: 48px 0 48px 40px;
     display: none;
-    z-index: 5;
+    z-index: 6;
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
 
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 .mobile-menu-list {
@@ -24,7 +28,7 @@
   }
   &:first-child {
     @media screen and (max-width: 767px) {
-      margin-bottom: 302px;
+      margin-bottom: auto;
     }
   }
 }
