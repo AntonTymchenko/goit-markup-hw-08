@@ -1,4 +1,7 @@
 .mobile-menu.mobile-menu-480 {
+  @media screen and (max-width: 380px) {
+    padding: 10px 0 10px 10px;
+  }
   @media screen and (max-height: 380px) {
     padding: 10px 0 10px 10px;
   }
